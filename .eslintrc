@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true,
+    }
+  },
+  "env":{
+    "browser": true,
+    "node": true
+  },
+  "plugins":[
+    "react"
+  ],
+  "rules": {
+    "no-console": "off",
+    "space-before-function-paren": "off",
+    "react/prop-types": "off",
+    "indent": "off",
+    "template-curly-spacing": "off",
+    "import/no-named-as-default-member": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./config/web/webpack.config.dev.js"
+      }
+    }
+  }  
+}
